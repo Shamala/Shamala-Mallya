@@ -9,30 +9,32 @@
     <script src="./js/main.js"></script>
   </head>
   <body class="font-sans dark:bg-black">
-    <header class="fixed top-0 min-w-full z-10">
+    <header class="fixed top-0 z-10 min-w-full">
       <h1
-        class="sm:text-6xl text-2xl bg-cyan-700 text-white font-bold p-5 [text-shadow:0_4px_8px_rgba(0,0,0,0.4)] text-center whitespace-nowrap"
+        class="whitespace-nowrap bg-cyan-700 p-5 text-center text-2xl font-bold text-white [text-shadow:0_4px_8px_rgba(0,0,0,0.4)] sm:text-6xl"
       >
         Shamala Mallya
       </h1>
       <nav
-        class="flex flex-row justify-evenly sm:text-2xl text-xl bg-cyan-600 text-white py-3 font-semibold gap-1"
+        class="flex flex-row justify-evenly gap-1 bg-cyan-600 py-3 text-xl font-semibold text-white sm:text-2xl"
       >
         <a class="hover:brightness-125" href="#about">About</a>
         <a class="hover:brightness-125" href="#projects">Projects</a>
         <a class="hover:brightness-125" href="#connect">Connect</a>
-        <a class="hover:brightness-125" href="#resume">Resume</a>
+        <a class="hover:brightness-125" href="./resume.html">Resume</a>
       </nav>
     </header>
-    <main class="dark:text-cyan-50 flex flex-col absolute top-0 min-w-full">
+    <main
+      class="absolute top-0 flex min-h-screen min-w-full flex-col dark:text-cyan-50"
+    >
       <div
-        class="bg-[url('../img/me-3000X4000.jpg')] bg-no-repeat bg-cover blur-sm min-h-screen opacity-30 -z-2"
+        class="-z-2 min-h-screen bg-[url('../img/me-3000X4000.jpg')] bg-cover bg-no-repeat opacity-30 blur-sm"
       ></div>
-      <article class="absolute -z-1 top-32 mt-1">
+      <article class="-z-1 absolute top-32 mt-1">
         <section id="about" class="m-3 p-5">
-          <h2 class="sm:text-4xl text-2xl font-medium mb-10">About Me</h2>
-          <p class="sm:text-xl text-lg tracking-wider leading-relaxed">
-            <span class="italic font-bold">Hello World!</span> 🌎, this is
+          <h2 class="mb-10 text-2xl font-medium sm:text-4xl">About Me</h2>
+          <p class="text-lg leading-relaxed tracking-wider sm:text-xl">
+            <span class="font-bold italic">Hello World!</span> 🌎, this is
             Shamala. I am a mom, wife, fitness enthusiast, and a frontend
             developer. I have over 12 years of software development experience
             in various business domains. I am currently working on frontend tech
@@ -43,31 +45,30 @@
               <abbr title="Registered Yoga Teacher">RYT 200</abbr>
             </span>
             certification. I love reading books. Made it to
-            <span class="italic font-bold">84 weeks</span> in a row as per
+            <span class="font-bold italic">84 weeks</span> in a row as per
             Kindle insights, until this month(<time datetime="Feb, 2023"
               >Feb, 2023</time
             >). Projects showcased below are a result of free time, and
             learning, and improving my skillset, over the past few months since
             I quit my full-time job in India and moved to USA with my family.
           </p>
-          <p class="sm:text-xl text-lg tracking-wider leading-relaxed">
+          <p class="text-lg leading-relaxed tracking-wider sm:text-xl">
             I am always learning to be a better developer, and a human everyday.
             😊
           </p>
         </section>
         <section class="m-3 p-5" id="projects">
-          <h2 class="sm:text-4xl text-2xl font-medium mb-10">
+          <h2 class="mb-10 text-2xl font-medium sm:text-4xl">
             Personal Projects
           </h2>
-          <p class="text-lg sm:text-xl tracking-wide leading-relaxed mb-10"></p>
+          <p class="mb-10 text-lg leading-relaxed tracking-wide sm:text-xl"></p>
         </section>
         <section class="m-3 p-5" id="connect">
-          <h2 class="sm:text-4xl text-2xl font-medium mb-10">Let's Connect</h2>
-          <p class="text-lg sm:text-xl tracking-wide leading-relaxed mb-10">
-            Interested in becoming a frontend engineer or want to follow me on
-            my fitness journey?
+          <h2 class="mb-10 text-2xl font-medium sm:text-4xl">Let's Connect</h2>
+          <p class="mb-10 text-lg leading-relaxed tracking-wide sm:text-xl">
+            Interested in becoming a frontend engineer or like fitness?
           </p>
-          <ul class="flex flex-row gap-5 mt-10 mb-16">
+          <ul class="mt-10 mb-16 flex flex-row gap-5">
             <li>
               <a href="mailto: shamala.mallya@outlook.com"
                 ><img
@@ -109,9 +110,9 @@
       </article>
     </main>
     <footer
-      class="fixed bottom-0 min-w-full bg-cyan-700 text-white text-center py-5"
+      class="fixed bottom-0 min-w-full bg-cyan-700 py-5 text-center text-white"
     >
-      Copyright &copy; <time id="year"></time> All Rights Reserved
+      <p>Copyright &copy; <time id="year"></time> All Rights Reserved</p>
     </footer>
   </body>
 </html>
