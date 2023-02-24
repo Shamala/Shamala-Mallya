@@ -9,7 +9,7 @@
     <script src="./js/main.js"></script>
   </head>
   <body class="font-sans dark:bg-black">
-    <header class="sm:fixed sm:top-0  sticky top-0 z-10 min-w-full">
+    <header class="fixed top-0   z-10 min-w-full">
       <h1
         class="whitespace-nowrap bg-cyan-700 p-5 text-center text-2xl font-bold text-white [text-shadow:0_4px_8px_rgba(0,0,0,0.4)] sm:text-6xl"
       >
@@ -28,9 +28,9 @@
       class="flex  flex-col dark:text-cyan-50 "
     >
         <div
-          class="hidden sm:block -z-2 min-h-screen  bg-[url('../img/me-3000X4000.jpg')] bg-cover  opacity-30 blur-sm"
+          class="  -z-2 min-h-screen  bg-[url('../img/me-3000X4000.jpg')] bg-cover bg-no-repeat bg-scroll  opacity-30 blur-sm"
         ></div>
-        <article class="-z-1 sm:absolute sm:top-20 sm:mt-20 mt-5">
+        <article class="-z-1 absolute top-28 mt-5">
           <section id="about" class="m-3 p-5">
             <h2 class="mb-5 whitespace-nowrap text-xl sm:text-3xl">About Me</h2>
             <p>
@@ -108,8 +108,8 @@
           </section>
         </article>
       </main>
-      <footer class=" bg-cyan-700 py-5 text-center text-white ">
-        <p>Copyright &copy; <time id="year"></time> All Rights Reserved</p>
+      <footer class="fixed -bottom-0 min-w-full bg-cyan-700 py-5 text-center text-white ">
+        <p class="text-sm">Copyright &copy; <time id="year"></time> All Rights Reserved</p>
       </footer>
     </div>
   </body>
