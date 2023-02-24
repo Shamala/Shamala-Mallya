@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./build/*.html", "./build/js/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
