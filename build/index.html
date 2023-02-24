@@ -9,109 +9,108 @@
     <script src="./js/main.js"></script>
   </head>
   <body class="font-sans dark:bg-black">
-    <header class="fixed top-0 z-10 min-w-full">
+    <header class="sm:fixed sm:top-0  sticky top-0 z-10 min-w-full">
       <h1
         class="whitespace-nowrap bg-cyan-700 p-5 text-center text-2xl font-bold text-white [text-shadow:0_4px_8px_rgba(0,0,0,0.4)] sm:text-6xl"
       >
         Shamala Mallya
       </h1>
       <nav
-        class="flex flex-row justify-evenly gap-1 bg-cyan-600 py-3 text-xl text-white sm:text-2xl"
+      class="flex flex-row justify-evenly gap-1 bg-cyan-600 py-3 text-xl font-semibold text-white sm:text-2xl"
       >
         <a class="hover:brightness-125" href="#about">About</a>
-        <a class="hover:brightness-125" href="#projects">Projects</a>
+        <a class="hover:brightness-125" href="#about">Projects</a>
         <a class="hover:brightness-125" href="#connect">Connect</a>
         <a class="hover:brightness-125" href="./resume.html">Resume</a>
       </nav>
     </header>
     <main
-      class="absolute top-0 flex min-h-screen min-w-full flex-col dark:text-cyan-50"
+      class="flex  flex-col dark:text-cyan-50 "
     >
-      <div
-        class="-z-2 min-h-screen bg-[url('../img/me-3000X4000.jpg')] bg-cover bg-no-repeat opacity-30 blur-sm"
-      ></div>
-      <article class="-z-1 absolute top-32 mt-5">
-        <section id="about" class="m-3 p-5">
-          <h2 class="mb-5 whitespace-nowrap text-xl sm:text-3xl">About Me</h2>
-          <p>
-            <span class="font-bold italic">Hello World!</span> 🌎, this is
-            Shamala; A mom, wife, fitness enthusiast, and a frontend developer.
-            I have over 12 years of software development experience in various
-            business domains. I currently work on frontend tech these days.
-            Apart from coding in day-to-day life, I love fitness. P.S. I also
-            have a
-            <span class="italic">
-              <abbr title="Registered Yoga Teacher">RYT 200</abbr>
-            </span>
-            certification. Kindle is my next best buddy! Made it to
-            <span class="font-bold italic">84 weeks</span> in a row as per
-            Kindle insights, until this month(<time datetime="Feb, 2023"
-              >Feb, 2023</time
-            >). Projects showcased below are a result of self learning over the
-            past few months, since I quit my full-time job in India and moved to
-            USA with my family.
-          </p>
+        <div
+          class="hidden sm:block -z-2 min-h-screen  bg-[url('../img/me-3000X4000.jpg')] bg-cover  opacity-30 blur-sm"
+        ></div>
+        <article class="-z-1 sm:absolute sm:top-20 sm:mt-20 mt-5">
+          <section id="about" class="m-3 p-5">
+            <h2 class="mb-5 whitespace-nowrap text-xl sm:text-3xl">About Me</h2>
+            <p>
+              <span class="font-bold italic">Hello World!</span> 🌎, this is
+              Shamala; A mom, wife, fitness enthusiast, and a frontend
+              developer. I have over 12 years of software development experience
+              in various business domains. I currently work on frontend tech
+              these days. Apart from coding in day-to-day life, I love fitness.
+              P.S. I also have a
+              <span class="italic">
+                <abbr title="Registered Yoga Teacher">RYT 200</abbr>
+              </span>
+              certification. Kindle is my next best buddy! Made it to
+              <span class="font-bold italic">84 weeks</span> in a row as per
+              Kindle insights, until this month(<time datetime="Feb, 2023"
+                >Feb, 2023</time
+              >). I have a few projects showcased which are a result of self learning over
+              the past few months, since I quit my full-time job in India and
+              moved to USA with my family.
+            </p>
 
-          <p class="mt-3">
-            Learning to be a better developer, and a human everyday. 😊
-          </p>
-        </section>
-        <section class="m-3 p-5" id="projects">
-          <h2 class="mb-5 whitespace-nowrap text-xl sm:text-3xl">
-            Personal Projects
-          </h2>
-          <p class="mb-10 text-lg leading-relaxed tracking-wide sm:text-xl"></p>
-        </section>
-        <section class="m-3 p-5" id="connect">
-          <h2 class="mb-5 whitespace-nowrap text-xl sm:text-3xl">
-            Let's Connect
-          </h2>
-          <p>Interested in becoming a frontend engineer or like fitness?</p>
-          <ul class="mt-6 mb-16 flex flex-row gap-5">
-            <li>
-              <a href="mailto: shamala.mallya@outlook.com"
-                ><img
-                  src="./img/icons8-mail-48.png"
-                  alt="email"
-                  height="48"
-                  width="48"
-              /></a>
-            </li>
-            <li class="text-center">
-              <a href="https://www.linkedin.com/in/b-shamala-mallya/"
-                ><img
-                  src="./img/icons8-linkedin-48.png"
-                  alt="LinkedIn"
-                  height="48"
-                  width="48"
-              /></a>
-            </li>
-            <li>
-              <a href="https://github.com/Shamala/"
-                ><img
-                  src="./img/icons8-github-48.png"
-                  alt="Github"
-                  height="48"
-                  width="48"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/konkani_mumma/"
-                ><img
-                  src="./img/icons8-instagram-48.png"
-                  alt="Instagram"
-                  height="48"
-                  width="48"
-              /></a>
-            </li>
-          </ul>
-        </section>
-      </article>
-    </main>
-    <footer
-      class="absolute -bottom-0 min-w-full bg-cyan-700 py-5 text-center text-white"
-    >
-      <p>Copyright &copy; <time id="year"></time> All Rights Reserved</p>
-    </footer>
+            <p class="mt-3">
+              Learning to be a better developer, and a human everyday. 😊
+            </p>
+          </section>
+          <section class="m-3 p-5" id="projects">
+            <h2 class="mb-5 whitespace-nowrap text-xl sm:text-3xl">
+              Personal Projects
+            </h2>
+            <p
+              class="mb-10 text-lg leading-relaxed tracking-wide sm:text-xl"
+            ></p>
+          </section>
+          <section class="mt-3 mr-3 ml-3 pl-5 pr-5 pb-4" id="connect">
+            <h2 class="mb-5 whitespace-nowrap text-xl sm:text-3xl">Let's Connect</h2>
+            <p>Interested in becoming a frontend engineer or like fitness?</p>
+            <ul class="mt-6 mb-16 flex flex-row gap-5">
+              <li>
+                <a href="mailto: shamala.mallya@outlook.com"
+                  ><img
+                    src="./img/icons8-mail-48.png"
+                    alt="email"
+                    height="48"
+                    width="48"
+                /></a>
+              </li>
+              <li class="text-center">
+                <a href="https://www.linkedin.com/in/b-shamala-mallya/"
+                  ><img
+                    src="./img/icons8-linkedin-48.png"
+                    alt="LinkedIn"
+                    height="48"
+                    width="48"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/Shamala/"
+                  ><img
+                    src="./img/icons8-github-48.png"
+                    alt="Github"
+                    height="48"
+                    width="48"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/konkani_mumma/"
+                  ><img
+                    src="./img/icons8-instagram-48.png"
+                    alt="Instagram"
+                    height="48"
+                    width="48"
+                /></a>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </main>
+      <footer class=" bg-cyan-700 py-5 text-center text-white ">
+        <p>Copyright &copy; <time id="year"></time> All Rights Reserved</p>
+      </footer>
+    </div>
   </body>
 </html>
