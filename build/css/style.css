@@ -525,8 +525,8 @@ video {
   position: sticky;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.-bottom-0 {
+  bottom: -0px;
 }
 
 .top-0 {
@@ -535,18 +535,6 @@ video {
 
 .top-32 {
   top: 8rem;
-}
-
-.-bottom-10 {
-  bottom: -2.5rem;
-}
-
-.-bottom-5 {
-  bottom: -1.25rem;
-}
-
-.-bottom-0 {
-  bottom: -0px;
 }
 
 .z-10 {
@@ -563,6 +551,10 @@ video {
 
 .m-3 {
   margin: 0.75rem;
+}
+
+.-mt-3 {
+  margin-top: -0.75rem;
 }
 
 .mb-1 {
@@ -597,10 +589,6 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -613,12 +601,12 @@ video {
   margin-top: 1.5rem;
 }
 
-.-mt-2 {
-  margin-top: -0.5rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
-.-mt-3 {
-  margin-top: -0.75rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .flex {
@@ -785,11 +773,6 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -893,10 +876,6 @@ video {
     grid-column: span 4 / span 4;
   }
 
-  .sm\:mb-5 {
-    margin-bottom: 1.25rem;
-  }
-
   .sm\:mt-3 {
     margin-top: 0.75rem;
   }
@@ -920,6 +899,11 @@ video {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-4xl {
